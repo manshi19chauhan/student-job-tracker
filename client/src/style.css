@@ -1,0 +1,162 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #dbeafe, #e0f2fe);
+  color: #111827;
+  min-height: 100vh;
+}
+
+/* App Container */
+.div1-h1-stud-jb-trk {
+  max-width: 640px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.h1-stud-jb-trk {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #2563eb;
+}
+
+/* Job Form */
+.job-form-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #f0f4ff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #cbd5e1;
+}
+
+.job-form-details input,
+.job-form-details select {
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.job-form-details input:focus,
+.job-form-details select:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+.job-form-add-bttn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.9rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.job-form-add-bttn:hover {
+  background-color: #1e3a8a;
+  transform: translateY(-1px);
+}
+
+/* Job List */
+.job-lst-div {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.job-lst-details {
+  background: linear-gradient(to right, #ffffff, #e0f2fe);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out;
+  border-left: 6px solid #2563eb;
+}
+
+.job-lst-details:hover {
+  transform: translateY(-4px);
+}
+
+.job-company-role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.job-lst-link {
+  display: inline-block;
+  margin-top: 0.25rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.job-lst-link:hover {
+  text-decoration: underline;
+}
+
+.job-lst-bttn-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.job-lst-status-bttn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background-color: #f1f5f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.job-lst-status-bttn:hover {
+  background-color: #c7d2fe;
+}
+
+.job-lst-status-bttn.bg-green-200 {
+  background-color: #bbf7d0 !important;
+  border-color: #4ade80;
+  font-weight: 600;
+  color: #065f46;
+}
+
+.job-lst-del-bttn {
+  background-color: #fecaca;
+  color: #b91c1c;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-lst-del-bttn:hover {
+  background-color: #ef4444;
+  color: white;
+}
